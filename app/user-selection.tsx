@@ -16,14 +16,14 @@ export default function UserSelection() {
         style={styles.button}
         onPress={() => router.push("/home")}
       >
-        <Text style={styles.buttonText}>👵 Elderly</Text>
+        <Text style={styles.buttonText}> For Me. </Text>
       </TouchableOpacity>
 
       <TouchableOpacity
         style={[styles.button, { backgroundColor: "#fff" }]}
         onPress={() => router.push("/home")}
       >
-        <Text style={[styles.buttonText, { color: "#43e97b" }]}>👩‍⚕️ Caregiver</Text>
+        <Text style={[styles.buttonText, { color: "#43e97b" }]}> Someone I Care For. </Text>
       </TouchableOpacity>
     </LinearGradient>
   );
