@@ -1,12 +1,12 @@
+import { LinearGradient } from "expo-linear-gradient";
 import { useState } from "react";
 import {
-  View,
-  Text,
-  StyleSheet,
   FlatList,
+  StyleSheet,
+  Text,
   TouchableOpacity,
+  View,
 } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
 
 const meds = [
   { id: "1", time: "8:00 AM", name: "Metformin", dosage: "500mg" },

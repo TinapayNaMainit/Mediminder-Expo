@@ -1,38 +1,38 @@
+import { LinearGradient } from "expo-linear-gradient";
 import React, { useState } from "react";
 import {
-  View,
-  Text,
-  StyleSheet,
   FlatList,
+  StyleSheet,
+  Text,
   TouchableOpacity,
+  View,
 } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
 
 const upcomingMeds = [
   {
     id: "1",
-    date: "2025-08-25",
+    date: "August 25, 2025",
     time: "8:00 AM",
     name: "Metformin",
     dosage: "500mg",
   },
   {
     id: "2",
-    date: "2025-08-25",
+    date: "August 25, 2025",
     time: "12:00 PM",
     name: "Amlodipine",
     dosage: "10mg",
   },
   {
     id: "3",
-    date: "2025-08-26",
+    date: "August 26, 2025",
     time: "7:30 AM",
     name: "Lisinopril",
     dosage: "20mg",
   },
   {
     id: "4",
-    date: "2025-08-26",
+    date: "August 26, 2025",
     time: "9:00 PM",
     name: "Atorvastatin",
     dosage: "20mg",
@@ -86,6 +86,7 @@ export default function Schedule() {
             <Text style={styles.dosage}>{item.dosage}</Text>
           </View>
         )}
+        showsVerticalScrollIndicator={false}
       />
     </LinearGradient>
   );

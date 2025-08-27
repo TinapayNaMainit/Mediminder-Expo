@@ -1,13 +1,13 @@
-import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { Tabs } from "expo-router";
 
 export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: "#2563eb", // Tailwind blue-600
-        tabBarInactiveTintColor: "#94a3b8", // gray-400
+        tabBarActiveTintColor: "#2563eb",
+        tabBarInactiveTintColor: "#94a3b8",
         tabBarStyle: {
           borderTopLeftRadius: 20,
           borderTopRightRadius: 20,
@@ -53,7 +53,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="Expiry-monitor"
+        name="expirymonitor"
         options={{
           title: "Expiry",
           tabBarIcon: ({ color, size }) => (
